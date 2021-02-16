@@ -6,6 +6,7 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  transition: 0.3s;
 }
 p {
   visibility: hidden;
@@ -25,10 +26,40 @@ p {
   transition: 0.3s;
   transform: translateX(200px);
 }
-.mouse-event {
+/* .mouse-event {
   border: 4px solid skyblue;
   width: 200px;
   position: absolute;
   left: 50%;
+  top: 10px;
   transform: translate(-50%, -50%);
+} */
+
+.theme-container {
+  position: fixed;
+  top: 10px;
+}
+.theme {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+#dark {
+  background: black;
+}
+#yellow {
+  background: yellow;
+}
+#green {
+  background: green;
+}
+.dark-theme {
+  background: black;
+  color: white;
+}
+.yellow-theme {
+  background: yellow;
+}
+.green-theme {
+  background: green;
 }

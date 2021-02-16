@@ -5,6 +5,8 @@ const img = document.querySelector(".img");
 const mouseEvent = document.querySelector(".mouse-event");
 const horizontal = document.querySelector(".horizontal");
 const vertical = document.querySelector(".vertical");
+const question = document.querySelector("#question");
+const themeButton = document.querySelectorAll(".theme");
 
 // CLICK
 // premier paramètre : événement // 2ème : action
@@ -28,4 +30,32 @@ mouseEvent.addEventListener("mousemove", (event) => {
   } else {
     document.body.style.filter = "none";
   }
+});
+
+// INPUT event
+question.addEventListener("input", (event) => {
+  console.log(event);
+  document.querySelector(".result").innerHTML = event.target.value;
+});
+
+// SWITCH
+themeButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    document.body.classList.remove("dark-theme", "yellow-theme", "green-theme");
+
+    switch (event.target.id) {
+      case "dark":
+        document.body.classList.add("dark-theme");
+        break;
+      case "yellow":
+        document.body.classList.add("yellow-theme");
+        break;
+      case "green":
+        document.body.classList.add("green-theme");
+        break;
+      // toujous finir le switch par un default case
+      default:
+        null;
+    }
+  });
 });
