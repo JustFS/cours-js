@@ -1,0 +1,34 @@
+* {
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+p {
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(-200px);
+}
+.animated .show,
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.animated img {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(200px);
+}
+.mouse-event {
+  border: 4px solid skyblue;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
