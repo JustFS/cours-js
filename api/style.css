@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+#quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0 0 0 / 65%);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(51, 51, 51, 0.267);
+  transition: 0.3s;
+}
+#quote:hover {
+  background: rgb(0 0 0 / 85%);
+  transform: scale(1.03) translate(-50%, -50%);
+}
+#quote em {
+  display: block;
+  text-align: right;
+  color: rgb(167, 167, 167);
+}
