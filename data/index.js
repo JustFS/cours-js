@@ -24,7 +24,8 @@ for (let i = 0; i < arrayVarie.length; i++) {
 
 const display = document.querySelector(".display-array");
 
-display.innerHTML = arrayString
+// MAP
+display.innerHTML = array
   .map(
     (element) =>
       `

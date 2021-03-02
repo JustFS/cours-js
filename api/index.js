@@ -19,3 +19,8 @@ quoteApi.addEventListener("click", () => {
 });
 
 getPicture();
+
+// FETCH DE BASE
+// fetch("https://api.quotable.io/random")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));

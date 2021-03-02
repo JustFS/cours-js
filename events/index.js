@@ -34,8 +34,9 @@ mouseEvent.addEventListener("mousemove", (event) => {
 
 // INPUT event
 question.addEventListener("input", (event) => {
-  console.log(event);
-  document.querySelector(".result").innerHTML = event.target.value;
+  // event.target.value recupère ce qui est tapé dans l'input
+  console.log(event.target.value);
+  // document.querySelector(".result").innerHTML = event.target.value;
 });
 
 // SWITCH

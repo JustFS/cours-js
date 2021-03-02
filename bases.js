@@ -19,7 +19,7 @@ const faireUnTruc = (tache) => {
   // concaténation 1
   console.log(`Je fais : ${tache} on remet du texte`);
   // concaténation 2
-  console.log("Concaténation numéro 2" + tache);
+  console.log("Concaténation numéro 2" + tache + "continuer la concaténation");
 };
 
 faireUnTruc("la vaisselle");
