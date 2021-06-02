@@ -32,7 +32,7 @@ btn2.addEventListener("click", () => {
 //----------
 
 img.addEventListener("mousemove", (e) => {
-  console.log(e);
+  // console.log(e);
   img.style.left = e.pageX + "px";
 });
 
@@ -61,3 +61,12 @@ window.addEventListener("mousemove", (e) => {
 //   circle.style.top = e.pageY + "px";
 // });
 // });
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    // navbar n'est jamais déclaré car c'ets un id de "nav"
+    navbar.style.top = 0;
+  } else {
+    navbar.style.top = "-50px";
+  }
+});
