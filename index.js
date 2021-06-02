@@ -1,32 +1,20 @@
-// VARIABLES
+const h1 = document.querySelector("h1");
 
-var MaVieilleVariable =
-  "poijpoijf^poeifj poejf ^poiez sudf^poezj sdpof^j epof jds";
+h1.addEventListener("click", () => {
+  h1.classList.toggle("styleH1");
+});
 
-// Const = valeur immuable
-const prenom = "Julien";
+const btn1 = document.querySelector("#btn-1");
+const popup = document.querySelector(".popup");
 
-// Let = peut évoluer au fil du code
-let cours2 = "Javascript trop cool";
-cours2 = "Super !";
-cours2 = false;
-cours2 = 34;
+btn1.addEventListener("click", () => {
+  // popup.style.visibility = "visible";
+  popup.classList.add("popupDisplay");
+});
 
-//------------------------------------------
+const closeBtn = document.querySelector("#close");
 
-// Fonction classique
-function faireQuelqueChose() {
-  console.log("Je fais un truc");
-}
-
-// Appel de la fonction
-faireQuelqueChose();
-
-// Fonction flêchée
-const faireUnTruc = (tache) => {
-  console.log("Je fais : " + tache);
-};
-
-faireUnTruc("les courses");
-faireUnTruc("le ménage");
-faireUnTruc(cours2);
+closeBtn.addEventListener("click", () => {
+  // popup.style.visibility = "hidden";
+  popup.classList.remove("popupDisplay");
+});
