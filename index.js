@@ -35,3 +35,29 @@ img.addEventListener("mousemove", (e) => {
   console.log(e);
   img.style.left = e.pageX + "px";
 });
+
+//---------------------------------------------
+const c1 = document.querySelector(".c1");
+const c2 = document.querySelector(".c2");
+const c3 = document.querySelector(".c3");
+
+window.addEventListener("mousemove", (e) => {
+  c1.style.left = e.pageX + "px";
+  c1.style.top = e.pageY + "px";
+
+  c2.style.left = e.pageX + "px";
+  c2.style.top = e.pageY + "px";
+
+  c3.style.left = e.pageX + "px";
+  c3.style.top = e.pageY + "px";
+});
+
+// Méthode avec forEach
+// const circles = document.querySelectorAll(".circle");
+
+// window.addEventListener("mousemove", (e) => {
+// circles.forEach((circle) => {
+//   circle.style.left = e.pageX + "px";
+//   circle.style.top = e.pageY + "px";
+// });
+// });
