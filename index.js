@@ -81,10 +81,29 @@ themeButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     console.log(e.target.id);
 
+    document.body.classList.remove(
+      "dark-theme",
+      "orange-theme",
+      "skyblue-theme"
+    );
+
     switch (e.target.id) {
       case "dark":
         document.body.classList.add("dark-theme");
         break;
+      case "orange":
+        document.body.classList.add("orange-theme");
+        break;
+      case "skyblue":
+        document.body.classList.add("skyblue-theme");
+        break;
+      default:
+        null;
     }
+
+    function getTheme(color) {
+      document.body.classList.add(color + "-theme");
+    }
+    getTheme(e.target.id);
   });
 });

@@ -7,6 +7,7 @@ body {
   text-align: center;
   min-height: 200vh;
   margin: 0;
+  transition: 0.2s ease;
 }
 .circle {
   border-radius: 150px;
