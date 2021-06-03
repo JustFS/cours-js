@@ -157,3 +157,42 @@ form.addEventListener("submit", (e) => {
     alert("Veuillez bien remplir tout svp !!!");
   }
 });
+
+//-------------------------------------
+// KEYPRESS
+//---------
+
+const ball = document.querySelector(".ball");
+let haut = 0;
+let gauche = 0;
+
+window.addEventListener("keypress", (e) => {
+  console.log(e.key);
+
+  console.log(ball.offsetLeft);
+  console.log(ball.offsetTop);
+
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
+
+  switch (e.key) {
+    case "z":
+      if (haut > 0) {
+        haut = haut - 40;
+        ball.style.top = haut + "px";
+      }
+      break;
+    case "s":
+      haut = haut + 40;
+      ball.style.top = haut + "px";
+      break;
+    case "q":
+      gauche = gauche - 40;
+      ball.style.left = gauche + "px";
+      break;
+    case "d":
+      gauche = gauche + 40;
+      ball.style.left = gauche + "px";
+      break;
+  }
+});

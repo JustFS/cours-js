@@ -128,3 +128,14 @@ img {
 .skyblue-theme {
   background: skyblue;
 }
+.ball {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  background: rgba(218, 112, 214, 0.198);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
+}
