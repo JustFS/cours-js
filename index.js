@@ -116,9 +116,10 @@ const inputName = document.getElementById("name");
 const inputPassword = document.getElementById("password");
 const gendersInput = document.querySelectorAll(".gender");
 const form = document.querySelector("form");
+const content = document.querySelector(".content");
 let pseudo;
 let password;
-let gender;
+let gender = "femme";
 
 inputName.addEventListener("input", (e) => {
   pseudo = e.target.value;
@@ -138,23 +139,21 @@ gendersInput.forEach((input) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  if (cgv.checked) {
-    console.log("vrai !");
+  if (cgv.checked && pseudo && password && gender) {
+    userData = {
+      pseudo: pseudo,
+      password: password,
+      gender: gender,
+    };
+    console.log(userData);
+    inputName.value = "";
+    inputPassword.value = "";
+    cgv.checked = false;
+
+    // content.textContent
+    content.innerHTML =
+      "<h1 class='password'>Votre mot de passe : " + password + "</h1>";
   } else {
-    console.log("faux !");
+    alert("Veuillez bien remplir tout svp !!!");
   }
-
-  // Checker si cgv est coché, si vrai envoyer dans la console un objet avec toutes les données, sinon envoyer une alert('Veuillez remplir les CGV')
-  alert("");
-
-  // créer un objet
-  const monObjet = {
-    nom: "Julien",
-    age: 33,
-    ville: "Bordeaux",
-    admin: false,
-  };
-
-  // Bonus : autoriser la validation du formulaire que si tous les champs ont été remplis.
-  // Bonus2 : afficher sur le body les informations de l'utilisateur
 });
