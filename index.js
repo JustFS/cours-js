@@ -101,9 +101,41 @@ themeButtons.forEach((button) => {
         null;
     }
 
-    function getTheme(color) {
-      document.body.classList.add(color + "-theme");
-    }
-    getTheme(e.target.id);
+    // function getTheme(color) {
+    //   document.body.classList.add(color + "-theme");
+    // }
+    // getTheme(e.target.id);
   });
+});
+
+//-------------------------------------------
+// FORMULAIRE
+//-----------
+
+const inputName = document.getElementById("name");
+const inputPassword = document.getElementById("password");
+const gendersInput = document.querySelectorAll(".gender");
+const form = document.querySelector("form");
+let pseudo;
+let password;
+let gender;
+
+inputName.addEventListener("input", (e) => {
+  pseudo = e.target.value;
+});
+
+inputPassword.addEventListener("input", (e) => {
+  password = e.target.value;
+});
+
+gendersInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    gender = e.target.id;
+    console.log(gender);
+  });
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(cgv.checked);
 });
