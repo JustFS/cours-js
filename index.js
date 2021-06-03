@@ -137,10 +137,15 @@ gendersInput.forEach((input) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(cgv.checked);
+
+  if (cgv.checked) {
+    console.log("vrai !");
+  } else {
+    console.log("faux !");
+  }
 
   // Checker si cgv est coché, si vrai envoyer dans la console un objet avec toutes les données, sinon envoyer une alert('Veuillez remplir les CGV')
-  alert("couocu");
+  alert("");
 
   // créer un objet
   const monObjet = {
@@ -149,4 +154,7 @@ form.addEventListener("submit", (e) => {
     ville: "Bordeaux",
     admin: false,
   };
+
+  // Bonus : autoriser la validation du formulaire que si tous les champs ont été remplis.
+  // Bonus2 : afficher sur le body les informations de l'utilisateur
 });
