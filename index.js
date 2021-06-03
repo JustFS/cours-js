@@ -138,4 +138,15 @@ gendersInput.forEach((input) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(cgv.checked);
+
+  // Checker si cgv est coché, si vrai envoyer dans la console un objet avec toutes les données, sinon envoyer une alert('Veuillez remplir les CGV')
+  alert("couocu");
+
+  // créer un objet
+  const monObjet = {
+    nom: "Julien",
+    age: 33,
+    ville: "Bordeaux",
+    admin: false,
+  };
 });
