@@ -56,10 +56,10 @@ window.addEventListener("mousemove", (e) => {
 // const circles = document.querySelectorAll(".circle");
 
 // window.addEventListener("mousemove", (e) => {
-// circles.forEach((circle) => {
-//   circle.style.left = e.pageX + "px";
-//   circle.style.top = e.pageY + "px";
-// });
+//   circles.forEach((circle) => {
+//     circle.style.left = e.pageX + "px";
+//     circle.style.top = e.pageY + "px";
+//   });
 // });
 
 window.addEventListener("scroll", () => {
@@ -69,4 +69,22 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.style.top = "-50px";
   }
+});
+
+//---------------------------------------------
+// SWITCH & FOREACH
+//-----------------
+
+const themeButtons = document.querySelectorAll(".theme");
+
+themeButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    console.log(e.target.id);
+
+    switch (e.target.id) {
+      case "dark":
+        document.body.classList.add("dark-theme");
+        break;
+    }
+  });
 });
