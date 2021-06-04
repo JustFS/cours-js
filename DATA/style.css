@@ -1,0 +1,16 @@
+body {
+  display: flex;
+}
+.card {
+  border: 2px solid salmon;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
