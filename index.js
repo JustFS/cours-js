@@ -132,7 +132,7 @@ inputPassword.addEventListener("input", (e) => {
 gendersInput.forEach((input) => {
   input.addEventListener("input", (e) => {
     gender = e.target.id;
-    console.log(gender);
+    console.log(e);
   });
 });
 
@@ -140,7 +140,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (cgv.checked && pseudo && password && gender) {
-    userData = {
+    const userData = {
       pseudo: pseudo,
       password: password,
       gender: gender,
@@ -150,7 +150,7 @@ form.addEventListener("submit", (e) => {
     inputPassword.value = "";
     cgv.checked = false;
 
-    // content.textContent
+    // content.textContent = "Pour ne mettre QUE du texte"
     content.innerHTML =
       "<h1 class='password'>Votre mot de passe : " + password + "</h1>";
   } else {
@@ -167,13 +167,15 @@ let haut = 0;
 let gauche = 0;
 
 window.addEventListener("keypress", (e) => {
-  console.log(e.key);
+  // console.log(e.key);
 
-  console.log(ball.offsetLeft);
-  console.log(ball.offsetTop);
+  // Connaitre la position de la balle
+  // console.log(ball.offsetLeft);
+  // console.log(ball.offsetTop);
 
-  console.log(window.innerHeight);
-  console.log(window.innerWidth);
+  // Hauteur et largeur de la fenetre en pixel
+  // console.log(window.innerHeight);
+  // console.log(window.innerWidth);
 
   switch (e.key) {
     case "z":
@@ -194,5 +196,61 @@ window.addEventListener("keypress", (e) => {
       gauche = gauche + 40;
       ball.style.left = gauche + "px";
       break;
+  }
+});
+
+// function ah() {
+//   const audio = new Audio();
+//   audio.src = "./sounds/z.mp3";
+//   audio.play();
+// }
+
+// function drum() {
+//   const audio = new Audio();
+//   audio.src = "./sounds/e.mp3";
+//   audio.play();
+// }
+
+function ring(letter) {
+  const audio = new Audio();
+  audio.src = "./sounds/" + letter + ".mp3";
+  audio.play();
+}
+
+window.addEventListener("keypress", (e) => {
+  console.log(e.key);
+
+  if (e.key === ("a" || "z" || "e")) {
+    ring(e.key);
+  }
+
+  // if (e.key === "a") {
+  //   ring();
+  // } else if (e.key === "z") {
+  //   ah();
+  // } else if (e.key === "e") {
+  //   drum();
+  // }
+
+  // switch (e.key) {
+  //   case "a":
+  //     ring("a");
+  //     break;
+  //   case "z":
+  //     ring("z");
+  //     break;
+  //   case "e":
+  //     ring("e");
+  //     break;
+  //   default:
+  //     null;
+  // }
+});
+
+document.body.addEventListener("click", (e) => {
+  console.log(e.target);
+
+  if (e.target.tagName !== "BODY") {
+    e.target.remove();
   }
 });
