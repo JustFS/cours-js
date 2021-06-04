@@ -54,3 +54,18 @@ document.body.innerHTML = arrayOfObject
       `
   )
   .join("");
+
+let numberArray = [1, 34, 485, 2, 13989, 45, 5];
+let numberArray2 = [234, 34, 856];
+
+// On initialise ; jusqu'où doit aller al boucle ; comportement à adopter tant que la boucle n'est pas finie
+for (i = 0; i < numberArray.length; i++) {
+  // console.log(numberArray[i]);
+}
+
+// Fusionner 2 tableaux
+let newArray = [...numberArray, ...numberArray2];
+// console.log(newArray);
+
+// Filter / Trier les données
+console.log(newArray.filter((num) => num > 7).sort((a, b) => a - b));
