@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.quote {
+  width: 50%;
+  margin: 0 auto;
+  background: rgb(248, 177, 169);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.144);
+}
+p {
+  margin: 0;
+}
+em {
+  margin-top: 20px;
+  display: block;
+  text-align: right;
+}
