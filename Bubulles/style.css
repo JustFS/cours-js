@@ -1,6 +1,8 @@
 body {
   min-height: 100vh;
   overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
 }
 span {
   position: absolute;
