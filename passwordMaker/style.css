@@ -18,6 +18,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
   backdrop-filter: blur(5px) brightness(200%);
+  width: 80%;
+  max-width: 600px;
 }
 input[type="text"] {
   background: none;
@@ -31,11 +33,11 @@ input[type="text"] {
 }
 .range-container {
   text-align: center;
-  width: 280px;
   margin-bottom: 15px;
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 #display-password-length {
   width: 20px;
@@ -44,6 +46,7 @@ input[type="text"] {
   margin-bottom: 16px;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 input[type="checkbox"] {
   display: none;
@@ -74,6 +77,6 @@ button {
   border-radius: 140px;
   border: none;
   font-size: 1.15rem;
-  margin-top: 10px;
+  margin-top: 30px;
   box-shadow: -4px 5px 20px 1px rgb(0 0 0 / 27%);
 }
