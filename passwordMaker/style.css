@@ -73,10 +73,16 @@ label:hover {
 }
 button {
   background: chartreuse;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 140px;
   border: none;
   font-size: 1.15rem;
   margin-top: 30px;
-  box-shadow: -4px 5px 20px 1px rgb(0 0 0 / 27%);
+  box-shadow: -4px 5px 20px 1px rgba(0, 0, 0, 0.219);
+  transition: 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  letter-spacing: 1px;
 }
