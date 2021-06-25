@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  background: url(./bg.jpg) center/cover;
+  user-select: none;
+}
+.app {
+  background: #63570077;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
+  backdrop-filter: blur(5px) brightness(200%);
+}
+input[type="text"] {
+  background: none;
+  border: none;
+  outline: none;
+}
+#password-output {
+  margin: 10px 0 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.range-container {
+  text-align: center;
+  width: 280px;
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#display-password-length {
+  width: 20px;
+}
+.checkbox-container {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  background: chartreuse;
+  transform: scale(1.15);
+}
+label {
+  background: rgb(238, 238, 238);
+  height: 60px;
+  width: 60px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.246);
+  transition: 0.2s;
+}
+label:hover {
+  transform: scale(1.03);
+}
+button {
+  background: chartreuse;
+  padding: 10px;
+  border-radius: 140px;
+  border: none;
+  font-size: 1.15rem;
+  margin-top: 10px;
+  box-shadow: -4px 5px 20px 1px rgb(0 0 0 / 27%);
+}

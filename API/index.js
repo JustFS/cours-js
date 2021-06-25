@@ -7,8 +7,8 @@ function getQuote() {
   fetch("https://api.quotable.io/random")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-      console.log(data.author);
+      // console.log(data);
+      // console.log(data.author);
 
       document.body.innerHTML = `
         <div class="quote">
