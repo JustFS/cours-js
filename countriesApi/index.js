@@ -1,4 +1,7 @@
+const countriesContainer = document.querySelector(".countries-container");
+const inputSearch = document.getElementById("search");
 let countriesArray = [];
+let search = "";
 
 async function fetchCountries() {
   await fetch(
@@ -13,23 +16,28 @@ async function fetchCountries() {
 async function countriesDisplay() {
   await fetchCountries();
 
-  document.body.innerHTML = countriesArray
+  countriesContainer.innerHTML = countriesArray
+    .filter((country) =>
+      country.name.toLowerCase().includes(search.toLowerCase())
+    )
+    .sort((a, b) => b.population - a.population)
     .map(
       (country) =>
         `
-      <div class="card">
-        <img src=${country.flag} alt="Drapeau de ${country.name}" >
-        <h2>${country.name}</h2>
-        <h4>${country.capital}</h4>
-        <p>Population : ${country.population.toLocaleString()}</p>
-      </div>
-    `
+        <div class="card">
+          <img src=${country.flag} alt="Drapeau de ${country.name}" >
+          <h2>${country.name}</h2>
+          <h4>${country.capital}</h4>
+          <p>Population : ${country.population.toLocaleString()}</p>
+        </div>
+      `
     )
     .join("");
 }
 
 countriesDisplay();
 
-// Trier les pays par population (décroissant)
-
-// Créer un input dans lequel on peut filtrer les pays par nom
+inputSearch.addEventListener("input", (e) => {
+  search = inputSearch.value;
+  countriesDisplay();
+});
