@@ -6,10 +6,6 @@ async function fetchUser() {
     .then((data) => (userArray = data.results));
 
   console.log(userArray);
-
-  // setTimeout(() => {
-  //   console.log(userArray);
-  // }, 2000);
 }
 
 async function userDisplay() {
