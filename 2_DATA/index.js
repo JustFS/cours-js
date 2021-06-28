@@ -42,15 +42,15 @@ document.body.innerHTML = arrayOfObject
   .map(
     (user) =>
       `
-        <div class="card">
-          <h2>${user.nom}</h2>
-          <p>${user.age} ans</p>
-          <p>${user.admin ? "Est admin" : "N'est pas admin"}</p>
-          <ul>
-            <li>${user.technos[0]}</li>
-            <li>${user.technos[1]}</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h2>${user.nom}</h2>
+        <p>${user.age} ans</p>
+        <p>${user.admin ? "Est admin" : "N'est pas admin"}</p>
+        <ul>
+        <li>${user.technos[0]}</li>
+        <li>${user.technos[1]}</li>
+        </ul>
+      </div>
       `
   )
   .join("");
