@@ -7,8 +7,20 @@
   right: -300px;
   transition: 0.6s ease;
 }
+h1 {
+  user-select: none;
+}
 #main-img {
   display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.active {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: pink;
+  border: teal 3px solid;
+  border-radius: 30px;
 }
 @keyframes shake {
   10%,
@@ -31,4 +43,7 @@
   60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+p::selection {
+  background: pink;
 }

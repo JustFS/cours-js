@@ -6,10 +6,6 @@ const imgMain = document.getElementById("main-img");
 const popup = document.querySelector(".popup");
 const btnPopup = document.querySelector("#popup-btn");
 
-title.addEventListener("click", () => {
-  title.style.fontFamily = "cursive";
-});
-
 btn1.addEventListener("click", () => {
   imgMain.style.filter = "blur(1px) sepia(70%)";
 });
@@ -24,4 +20,21 @@ btn3.addEventListener("click", () => {
 
 btnPopup.addEventListener("click", () => {
   popup.style.right = "-300px";
+});
+
+// Injecter une classe
+title.addEventListener("click", () => {
+  // title.classList.add("active");
+  // title.classList.remove("title");
+
+  // Le toggle teste si la classe est présente, si elle l'est il la supprime, si elle ne l'est pas il l'ajoute
+  title.classList.toggle("active");
+});
+
+//-----------------------------------------------------------
+// MOUSEMOVE
+
+// le paramètre "e" (e pour Event) récupère donne les données de l'événement
+imgMain.addEventListener("mousemove", (e) => {
+  imgMain.style.left = e.x + "px";
 });
