@@ -38,3 +38,30 @@ title.addEventListener("click", () => {
 imgMain.addEventListener("mousemove", (e) => {
   imgMain.style.left = e.x + "px";
 });
+
+//-------------------------------------
+// SWITCH & FOREACH
+const themeButtons = document.querySelectorAll(".theme");
+
+themeButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    // e.target.id montre l'élément cliqué
+    console.log(e.target.id);
+
+    document.body.classList.remove("dark-theme", "lime-theme", "peru-theme");
+
+    switch (e.target.id) {
+      case "dark":
+        document.body.classList.add("dark-theme");
+        break;
+      case "lime":
+        document.body.classList.add("lime-theme");
+        break;
+      case "peru":
+        document.body.classList.add("peru-theme");
+        break;
+      default:
+        null;
+    }
+  });
+});

@@ -1,5 +1,5 @@
 // Afficher les données
-// alert("Yo !");
+alert("Yo !");
 console.log("Coucou la console");
 document.body.textContent = "Hello Javascript";
 document.body.innerHTML += "<h1>Hello Javascript</h1>";
@@ -52,7 +52,7 @@ const nomDeLaFonction = () => {
 const title = document.querySelector("h1");
 
 // Structure de l'event listener
-// maBalise.addEventListener("type d'event", maFonction)
+maBalise.addEventListener("type d'event", maFonction);
 
 title.addEventListener("click", faireQuelqueChose);
 
