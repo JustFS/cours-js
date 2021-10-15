@@ -78,3 +78,38 @@ themeButtons.forEach((button) => {
 window.addEventListener("keydown", (e) => {
   console.log(e.key);
 });
+
+function ring(letter) {
+  const audio = new Audio();
+  audio.src = "./sounds/" + letter + ".mp3";
+  audio.play();
+}
+
+window.addEventListener("keydown", (e) => {
+  if (e.key == "a" || "z" || "e") {
+    console.log("yes");
+    ring(e.key);
+  }
+
+  // switch (e.key) {
+  //   case "a":
+  //     ring("a");
+  //     break;
+  //   case "z":
+  //     ring("z");
+  //     break;
+  //   case "e":
+  //     ring("e");
+  //     break;
+  //   default:
+  //     null;
+  // }
+});
+
+//------------------------------
+// SCROLL
+
+window.addEventListener("scroll", () => {
+  // window.scrollY affiche la niveau de la scrollBar
+  console.log(window.scrollY);
+});
