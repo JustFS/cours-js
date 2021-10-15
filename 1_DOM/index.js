@@ -63,5 +63,18 @@ themeButtons.forEach((button) => {
       default:
         null;
     }
+
+    // function setTheme(color) {
+    //   document.body.classList.add(color + "-theme");
+    // }
+    // setTheme(e.target.id);
   });
+});
+
+//-------------------------------------
+// KEYDOWN
+//---------
+
+window.addEventListener("keydown", (e) => {
+  console.log(e.key);
 });
