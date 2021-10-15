@@ -14,5 +14,21 @@ window.addEventListener("keydown", (e) => {
       haut = haut - 40;
       cube.style.top = haut + "px";
       break;
+    case "ArrowLeft":
+      gauche = gauche - 40;
+      cube.style.left = gauche + "px";
+      break;
+    case "ArrowRight":
+      gauche = gauche + 40;
+      cube.style.left = gauche + "px";
+      break;
   }
+
+  // connaitre l'emplacement d'une div
+  console.log(cube.offsetLeft);
+  console.log(cube.offsetTop);
+
+  // connaitre les dimensions de l'écran du client
+  console.log(window.innerHeight);
+  console.log(window.innerWidth);
 });
