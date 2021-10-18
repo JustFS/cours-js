@@ -84,3 +84,6 @@ h1 {
 p::selection {
   background: pink;
 }
+span {
+  color: red;
+}

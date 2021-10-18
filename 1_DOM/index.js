@@ -113,3 +113,48 @@ window.addEventListener("scroll", () => {
   // window.scrollY affiche la niveau de la scrollBar
   console.log(window.scrollY);
 });
+
+//--------------------------------------
+// INPUT
+
+const nom = document.querySelector("#nom");
+const error = document.querySelector(".error");
+let retourNom = "";
+
+nom.addEventListener("input", (e) => {
+  retourNom = e.target.value;
+
+  if (retourNom.length < 3) {
+    error.textContent = "Le nom doit faire 3 caractères minimum";
+  } else {
+    error.textContent = "";
+  }
+});
+
+//-----------------------------------------
+const genreInputs = document.querySelectorAll(".genre");
+let genre = "";
+
+genreInputs.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    genre = e.target.id;
+    console.log(genre);
+  });
+});
+
+//--------------------------------------
+// SUBMIT
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (retourNom.length > 2 && cgv.checked) {
+    alert("Merci votre formulaire est bien envoyé");
+    nom.value = "";
+    cgv.checked = false;
+  } else {
+    alert("Veuillez remplir correctement les champs wesh !");
+  }
+});
