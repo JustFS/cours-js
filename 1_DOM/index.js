@@ -158,3 +158,12 @@ form.addEventListener("submit", (e) => {
     alert("Veuillez remplir correctement les champs wesh !");
   }
 });
+
+//--------------------------------------
+// SUPPRIMER ELEMENT SUR LE DOM
+
+document.body.addEventListener("click", (e) => {
+  if (e.target.tagName !== "BODY") {
+    e.target.remove();
+  }
+});

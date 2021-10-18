@@ -5,7 +5,12 @@ form {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.233);
   max-width: 500px;
   margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 label {
-  margin-bottom: 5px;
+  margin: 15px 0 5px;
+}
+input[type="submit"] {
+  margin: 20px 0;
+  padding: 10px;
 }
