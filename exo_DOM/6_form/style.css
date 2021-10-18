@@ -1,47 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 form {
-  border: 2px solid black;
-  border-radius: 5px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.246);
-  padding: 30px;
-}
-input {
-  margin-bottom: 20px;
-  display: block;
-  width: 100%;
+  display: grid;
+  border: 2px solid grey;
+  padding: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.233);
+  max-width: 500px;
+  margin: 0 auto;
 }
 label {
   margin-bottom: 5px;
-  display: block;
-}
-.checkbox {
-  display: flex;
-}
-input[type="checkbox"] {
-  display: inline-block;
-  width: 10%;
-  transform: translateY(6px);
-}
-input[type="submit"] {
-  text-align: center;
-  width: 100%;
-  background: grey;
-  color: white;
-  padding: 10px;
-  border-radius: 2px;
-  border: none;
-}
-.checkbox label {
-  margin-left: 5px;
 }
