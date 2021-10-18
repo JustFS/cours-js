@@ -1,4 +1,11 @@
-// Pointer le bouton sur le DOM
-// Ajouter un événement lorsque l'on click dessus
-// Injecter une classe qui révèle la Sidebar
-// Cacher la sidebar si jamais on click sur le contenu principal
+const btn = document.querySelector("#btn");
+const sidebar = document.querySelector("#side-bar");
+const content = document.querySelector(".content");
+
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+content.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
