@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  background: url(https://picsum.photos/1400/1000.jpg) center/cover;
+}
+.quote {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(44, 44, 44, 0.589);
+  color: rgb(224, 224, 224);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.quote:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.215);
+}
+p {
+  margin: 0;
+}
+em {
+  margin-top: 20px;
+  display: block;
+  text-align: right;
+}
