@@ -13,5 +13,5 @@ const getJoke = () => {
     `;
     });
 };
-// getJoke();
+getJoke();
 app.addEventListener("click", getJoke);

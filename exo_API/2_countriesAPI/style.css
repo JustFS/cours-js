@@ -1,0 +1,31 @@
+input {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+}
+input:focus {
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
+}
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card {
+  flex: 1 0 20%;
+  min-width: 260px;
+  margin: 5px;
+  background: #1d1d1d;
+  color: rgb(211, 211, 211);
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+img {
+  height: 100px;
+  width: 160px;
+  object-fit: cover;
+}
