@@ -28,11 +28,13 @@ function userDiplay() {
   document.body.innerHTML = userData
     .map((user) => {
       console.log(user);
-      return `<div class="card">
-        <img src=${user.picture.large} alt="photo profil" >
-        <h3>${user.name.first} ${user.name.last}</h3>
-        <p>${user.location.city}, ${dateFormater(user.dob.date)}</p>
-        <em>Membre depuis : ${dateCalculator(user.registered.date)} jours</em>
+
+      return `
+        <div class="card">
+          <img src=${user.picture.large} alt="photo profil" >
+          <h3>${user.name.first} ${user.name.last}</h3>
+          <p>${user.location.city}, ${dateFormater(user.dob.date)}</p>
+          <em>Membre depuis : ${dateCalculator(user.registered.date)} jours</em>
         </div>
       `;
     })
