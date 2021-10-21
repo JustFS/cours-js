@@ -11,7 +11,7 @@ async function fetchCountries() {
 
 function countriesDisplay() {
   document.body.innerHTML = countries
-    .map((country) => `<h3>${country.name.common}</h3>`)
+    .map((country) => `<h3>${dateConverteur(country.name.common)}</h3>`)
     .join("");
 }
 
