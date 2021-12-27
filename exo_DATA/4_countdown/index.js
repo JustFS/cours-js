@@ -15,11 +15,11 @@ function getInputValue() {
 
       seconds = seconds < 10 ? "0" + seconds : seconds;
 
-      countdown.innerHTML = `${minutes} : ${seconds}`;
+      countdown.textContent = `${minutes} : ${seconds}`;
       if (time > 0) {
         time--;
       } else {
-        countdown.innerHTML = `C'est terminé !`;
+        countdown.textContent = `C'est terminé !`;
         clearInterval(interval);
       }
     }

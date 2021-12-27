@@ -50,6 +50,8 @@ const nomDeLaFonction = () => {
 
 // Pointer un élément sur le DOM
 const title = document.querySelector("h1");
+const maClasse = document.querySelector(".classe");
+// L'ID est (quasiment) toujours connu par JS sans qu'on ait besoin de le déclarer.
 
 // Structure de l'event listener
 maBalise.addEventListener("type d'event", maFonction);

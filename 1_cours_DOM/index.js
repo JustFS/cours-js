@@ -114,9 +114,17 @@ window.addEventListener("scroll", () => {
   console.log(window.scrollY);
 });
 
+//------------
+// AOS Library
+//------------
+
 //--------------------------------------
 // INPUT
+monInput.value; // pas de textContent ou innetHTML
 
+// Intro exo input calc
+
+// Intro exo form
 const nom = document.querySelector("#nom");
 const error = document.querySelector(".error");
 let retourNom = "";
