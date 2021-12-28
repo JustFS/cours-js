@@ -7,6 +7,10 @@ let booleen = true;
 let array = ["Je", "suis", "un", "tableau"];
 let complexArray = ["Bordeaux", 23, true, [23, true, "Paris"]];
 // console.log(complexArray[3][2][0]);
+let index = 0;
+setInterval(() => {
+  document.body.textContent = array[index];
+}, 1000);
 
 let objet = {
   nom: "Denis",

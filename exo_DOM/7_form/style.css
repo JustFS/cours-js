@@ -1,16 +1,18 @@
 form {
   display: grid;
   border: 2px solid grey;
+  border-radius: 4px;
   padding: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.233);
   max-width: 500px;
-  margin: 0 auto;
+  margin: 40px auto;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 label {
   margin: 15px 0 5px;
 }
 input[type="submit"] {
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 10px;
+  width: 200px;
 }
