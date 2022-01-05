@@ -71,6 +71,18 @@ themeButtons.forEach((button) => {
   });
 });
 
+//------------------------------
+// SCROLL
+
+window.addEventListener("scroll", () => {
+  // window.scrollY affiche la niveau de la scrollBar
+  console.log(window.scrollY);
+});
+
+//------------
+// AOS Library
+//------------
+
 //-------------------------------------
 // KEYDOWN
 //---------
@@ -105,18 +117,6 @@ window.addEventListener("keydown", (e) => {
   //     null;
   // }
 });
-
-//------------------------------
-// SCROLL
-
-window.addEventListener("scroll", () => {
-  // window.scrollY affiche la niveau de la scrollBar
-  console.log(window.scrollY);
-});
-
-//------------
-// AOS Library
-//------------
 
 //--------------------------------------
 // INPUT

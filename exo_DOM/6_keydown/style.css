@@ -1,0 +1,8 @@
+.cube {
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  background: pink;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

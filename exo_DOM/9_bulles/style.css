@@ -1,0 +1,28 @@
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
+}
+span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 300px;
+  background: orange;
+  opacity: 0;
+  animation: anim 10s forwards;
+  filter: hue-rotate(0deg);
+}
+@keyframes anim {
+  to {
+    opacity: 1;
+    top: -450px;
+    filter: hue-rotate(720deg);
+    transform: translate(-50%, -50%);
+  }
+}
+.score {
+  font-size: 6rem;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.212);
+}

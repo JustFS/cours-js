@@ -76,13 +76,13 @@ if (x > 3) {
 
 switch (valeur) {
   case "cas1":
-    // algo des choses à réalisées
+    // algo des choses à réaliser
     break;
   case "cas2":
-    // algo des choses à réalisées
+    // algo des choses à réaliser
     break;
   case "cas3":
-    // algo des choses à réalisées
+    // algo des choses à réaliser
     break;
   default:
     null;
