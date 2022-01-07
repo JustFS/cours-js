@@ -1,9 +1,7 @@
-const list = document.getElementById('list');
-const form = document.querySelector('form');
-const item = document.getElementById('item');
-  
+const form = document.querySelector("form");
+
 // add element
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   list.innerHTML += `<li>${item.value}</li>`;
   storage();
@@ -11,11 +9,11 @@ form.addEventListener('submit', (e) => {
 });
 
 // remove element
-list.addEventListener('click', (e) => {
-  if(e.target.classList.contains('checked')){
+list.addEventListener("click", (e) => {
+  if (e.target.classList.contains("checked")) {
     e.target.remove();
   } else {
-    e.target.classList.add('checked');
+    e.target.classList.add("checked");
   }
   storage();
 });
@@ -26,11 +24,9 @@ function storage() {
 }
 function getValues() {
   let storageContent = window.localStorage.todoList;
-  if(!storageContent) {
-    list.innerHTML = 
-      `<li>Cliquez sur un todo pour le supprimer</li>`;
-  }
-  else {
+  if (!storageContent) {
+    list.innerHTML = `<li>Cliquez sur un todo pour le supprimer</li>`;
+  } else {
     list.innerHTML = storageContent;
   }
 }

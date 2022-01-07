@@ -22,7 +22,7 @@ body {
   max-width: 600px;
   box-shadow: -3px 2px 11px 6px #0000002b;
 }
-#password-output {
+#passwordOutput {
   background: transparent;
   font-size: 1.5rem;
 }
@@ -94,5 +94,5 @@ button:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 button:active {
-  transform: scale(9.9);
+  transform: scale(1.1);
 }

@@ -1,0 +1,86 @@
+* {
+  text-align: center;
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background: black;
+  color: white;
+}
+h1 {
+  font-size: 2.8rem;
+  text-shadow: 2px 3px 0px #ff5722;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  border: none;
+  font-size: 1.2rem;
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  outline: none;
+}
+input[type="submit"] {
+  padding: 10px;
+  width: 240px;
+  border-radius: 0 0 15px 15px;
+  border: none;
+  background: rgb(100, 100, 100);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+button {
+  padding: 10px;
+  font-size: 1.05rem;
+  background: #ff5722;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transform: translateY(-30px);
+  transition: 0.25s ease-out;
+}
+button:hover,
+input[type="submit"]:hover + button {
+  transform: translateY(0);
+  background: orange;
+}
+button:hover {
+  border-radius: 0 0 30px 30px;
+}
+
+img {
+  width: calc(100% - 100px);
+  object-fit: cover;
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-card {
+  flex: 1 0 20%;
+  min-width: 250px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 6px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* set here max line number you need */
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+}

@@ -102,3 +102,21 @@ let newFilter = newArray
   });
 
 console.log(newFilter);
+
+//--------------
+// LOCAL STORAGE
+//--------------
+
+// Stocker les éléments dans le local storage
+function storage() {
+  window.localStorage.mesSupersNombres = newArray;
+}
+storage();
+
+// Récupérer les données stockées
+function getStorage() {
+  let storageContent = window.localStorage.mesSupersNombres;
+  console.log(storageContent);
+  document.body.textContent = storageContent;
+}
+getStorage();

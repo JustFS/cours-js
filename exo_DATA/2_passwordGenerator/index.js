@@ -2,7 +2,6 @@ const dataLowerCase = "azertyuiopqsdghjklmwxcvbn";
 const dataUpperCase = dataLowerCase.toUpperCase();
 const dataNumbers = "0123456789";
 const dataSymbols = "&é'\"(-è_çà)=$^*ù!:;,?./%£+°";
-const passwordOutput = document.querySelector("#password-output");
 
 function generatePassword() {
   let data = [];
