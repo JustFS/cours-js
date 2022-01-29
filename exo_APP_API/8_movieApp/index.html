@@ -14,15 +14,20 @@
 
   <h1>What watch</h1>
 
-  <form action="">
-    <input type="text" placeholder="Entrez le titre d'un film" id="search-input">
-    <input type="submit" value="Rechercher">
-    <button id="buttonList">Découvrir notre sélection</button>
-  </form>
+  <div class="form-container">
+    <form action="">
+      <input type="text" placeholder="Entrez le titre d'un film" id="search-input">
+      <input type="submit" value="Rechercher">
+      <button id="buttonList">Découvrir notre sélection</button>
+    </form>
 
-  <ul id="result"></ul>
+    <div class="btn-sort-container">
+      <div id="goodToBad" class="btn-sort">Note <span>➜</span></div>
+      <div id="badToGood" class="btn-sort">Note <span>➜</span></div>
+    </div>
+  </div>
 
-  <img src="img/icon-512x512.png" alt="logo-ww">
+  <div id="result"></div>
 
   <script src="index.js"></script>
 </body>

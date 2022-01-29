@@ -1,5 +1,3 @@
-const btn = document.querySelector("#btn");
-const sidebar = document.querySelector("#side-bar");
 const content = document.querySelector(".content");
 
 btn.addEventListener("click", () => {

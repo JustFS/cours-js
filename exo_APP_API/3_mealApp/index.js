@@ -13,11 +13,10 @@ async function fetchMeals(search) {
 
 function mealsDisplay() {
   if (meals === null) {
-    result.innerHTML = "<h2>Aucun résultat</h2>";
+    searchResult.innerHTML = "<h2>Aucun résultat</h2>";
   } else {
-    meals.length = 12;
-
-    result.innerHTML = meals
+    searchResult.innerHTML = meals
+      .slice(0, 12)
       .map((meal) => {
         let ingredients = [];
 
@@ -31,7 +30,7 @@ function mealsDisplay() {
         }
 
         return `
-            <li class="card">
+            <div class="card">
               <h2>${meal.strMeal}</h2>
               <p>${meal.strArea}</p>
               <img src=${meal.strMealThumb} alt="photo ${meal.strMeal}">
@@ -40,7 +39,7 @@ function mealsDisplay() {
                 "watch?v=",
                 "embed/"
               )} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
+            </div>
             `;
       })
       .join("");

@@ -36,12 +36,13 @@ input {
 input:focus {
   border: 1px solid #16d9e7;
 }
-#result {
+#searchResult {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 110px;
 }
-#result > li {
+#searchResult > div {
   flex: 1 0 20%;
   min-width: 280px;
   max-width: 450px;
