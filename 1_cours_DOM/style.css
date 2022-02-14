@@ -2,6 +2,12 @@ body {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  transition: 2s;
+}
 .popup {
   background: salmon;
   width: 300px;

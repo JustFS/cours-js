@@ -11,6 +11,13 @@ title.addEventListener("click", () => {
 
 // Ajout classe
 btn1.addEventListener("click", () => {
+  // Ajouter classe
+  // mainImg.classList.add("active");
+
+  // Supprimer classe
+  // mainImg.classList.remove("active");
+
+  // Le toggle teste si la classe est présente dans la balise, si elle y est on la supprime et inversement.
   mainImg.classList.toggle("active");
 });
 
@@ -24,4 +31,13 @@ btn3.addEventListener("click", () => {
 
 popupBtn.addEventListener("click", () => {
   popup.style.right = "-450px";
+});
+
+//-----------------------------------------------------
+// MOUSEMOVE
+
+// "e" représente toutes les données ratachées à l'Event
+title.addEventListener("mousemove", (e) => {
+  title.style.left = e.x + "px";
+  title.style.top = e.y + "px";
 });
