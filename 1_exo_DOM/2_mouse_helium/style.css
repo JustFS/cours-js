@@ -16,6 +16,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 1000000000000000;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -26,6 +28,33 @@ body {
   color: rgb(246, 246, 246);
   min-height: 100vh;
   cursor: none;
+}
+/* MOUSE */
+.circles {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 1000px;
+}
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+#mouse1 {
+  height: 100px;
+  width: 100px;
+  mix-blend-mode: difference;
+  background: rgb(255, 245, 247);
+  transition: 0.2s ease;
+}
+#mouse2 {
+  height: 200px;
+  width: 200px;
+  mix-blend-mode: difference;
+  background: rgb(37, 37, 37);
+  transition: 0.3s ease;
 }
 nav {
   display: grid;
