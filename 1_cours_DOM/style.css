@@ -8,5 +8,20 @@ body {
   padding: 5px;
   border-radius: 10px;
   position: fixed;
-  right: -310px;
+  right: -330px;
+  transition: 0.4s ease;
+}
+.active {
+  filter: blur(4px);
+  height: 150px;
+  border-radius: 30px;
+  border: 3px solid pink;
+}
+@keyframes animBody {
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
