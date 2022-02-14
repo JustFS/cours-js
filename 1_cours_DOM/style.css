@@ -2,3 +2,11 @@ body {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+.popup {
+  background: salmon;
+  width: 300px;
+  padding: 5px;
+  border-radius: 10px;
+  position: fixed;
+  right: -310px;
+}
