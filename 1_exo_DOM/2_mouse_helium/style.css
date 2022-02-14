@@ -15,49 +15,17 @@ a,
 a:visited {
   color: white;
   text-decoration: none;
-  z-index: 1000;
-  position: relative;
   transition: 0.3s;
 }
 a:hover {
   font-size: 1.3rem;
   color: #2128bd;
 }
-/* MOUSE */
-span {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 1500px;
-}
-#mouse1 {
-  height: 200px;
-  width: 200px;
-  mix-blend-mode: difference;
-  background: rgb(255, 245, 247);
-  transition: 0.2s ease;
-}
-#mouse2 {
-  height: 400px;
-  width: 400px;
-  mix-blend-mode: difference;
-  background: rgb(37, 37, 37);
-  transition: 0.3s ease;
-}
-#cursor {
-  margin-top: 0px;
-  background: #2128bd;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  z-index: 10;
-  mix-blend-mode: difference;
-}
 body {
   background: rgb(27, 27, 27);
   color: rgb(246, 246, 246);
   min-height: 100vh;
   cursor: none;
-  overflow-x: hidden;
 }
 nav {
   display: grid;
