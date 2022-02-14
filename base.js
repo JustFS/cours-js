@@ -47,3 +47,12 @@ maBalise.addEventListener("type d'événement", fonction);
 maBalise.addEventListener("click", () => {
   // La fonction s'éxecute au click sur la balise
 });
+
+//--------------------------------------
+// Les structures contrôles
+
+if (maVariable > 200) {
+  // Valeur si vrai
+} else {
+  // Valeur si faux
+}

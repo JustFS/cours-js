@@ -41,3 +41,12 @@ title.addEventListener("mousemove", (e) => {
   title.style.left = e.x + "px";
   title.style.top = e.y + "px";
 });
+
+//------------------------------------------------------
+// SCROLL
+
+window.addEventListener("scroll", (e) => {
+  // console.log(window.innerWidth);
+  // console.log(window.innerHeight);
+  console.log(window.scrollY);
+});

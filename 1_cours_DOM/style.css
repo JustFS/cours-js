@@ -1,6 +1,7 @@
 body {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  min-height: 300vh;
 }
 h1 {
   position: absolute;

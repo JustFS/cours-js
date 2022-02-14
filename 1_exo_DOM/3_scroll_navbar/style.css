@@ -1,0 +1,32 @@
+body {
+  min-height: 400vh;
+  margin: 0;
+  color: gold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+li {
+  list-style: none;
+}
+nav {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+  background: rgb(15, 15, 15);
+  height: 60px;
+  top: 0;
+  transition: 0.5s ease;
+}
+h2,
+ul {
+  margin: 0;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  height: 100vh;
+  background: url(./bg.jpg) center/cover;
+}
