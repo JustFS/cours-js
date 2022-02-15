@@ -50,3 +50,38 @@ window.addEventListener("scroll", (e) => {
   // console.log(window.innerHeight);
   console.log(window.scrollY);
 });
+
+//-------------------------------------------------------
+// INPUT
+
+// Obtenir ce qui est tapé dans un input
+nom.value; // Ne pas utiliser textContent
+
+const error = document.querySelector(".error");
+
+nom.addEventListener("input", () => {
+  if (nom.value.length < 3) {
+    error.textContent = "Pseudo trop court !!!!";
+    error.style.color = "red";
+  } else {
+    error.textContent = "";
+  }
+});
+
+//-----------------------------------------------------
+// SUBMIT
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  // preventDefault empeche le rechargement de la page
+  e.preventDefault();
+
+  if (cgv.checked && nom.value.length >= 3) {
+    alert("Bingo !");
+    nom.value = "";
+    cgv.checked = false;
+  } else {
+    alert("Veuillez remplir correctement !");
+  }
+});

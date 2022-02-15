@@ -32,3 +32,6 @@ h1 {
     transform: translate(0);
   }
 }
+label {
+  user-select: none;
+}
