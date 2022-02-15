@@ -11,6 +11,7 @@ body {
 .content {
   color: #09fbba;
   transition: 1s;
+  min-height: 100vh;
 }
 h1 {
   text-transform: uppercase;
@@ -58,4 +59,22 @@ li {
 li:hover {
   background: #292929;
   color: #fcfcfb;
+}
+#side-bar.active {
+  left: 0;
+}
+.active ~ .content {
+  opacity: 0.3;
+}
+.active span {
+  position: absolute;
+}
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.active span:nth-child(2) {
+  opacity: 0;
+}
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
 }
