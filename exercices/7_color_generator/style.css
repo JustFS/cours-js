@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s linear;
+}
+h2 {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 7px 20px #0000004d;
+}

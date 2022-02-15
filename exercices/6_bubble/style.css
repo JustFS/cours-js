@@ -1,0 +1,26 @@
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
+}
+span {
+  position: absolute;
+  background: orange;
+  border-radius: 300px;
+  animation: animColor 5s forwards linear;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+@keyframes animColor {
+  100% {
+    filter: hue-rotate(720deg);
+    top: -500px;
+    opacity: 1;
+  }
+}
+#score {
+  font-size: 6rem;
+  text-align: center;
+  color: rgb(168, 168, 168);
+}

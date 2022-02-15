@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: grid;
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 20px;
+  width: 50%;
+  max-width: 500px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+label {
+  margin: 15px 0 5px;
+}
+input[type="submit"] {
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
+}
