@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.user-card {
+  border: 3px solid salmon;
+  padding: 20px;
+  width: 150px;
+}

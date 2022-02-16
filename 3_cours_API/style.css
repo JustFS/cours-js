@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background: url(https://picsum.photos/1400/1000) center/cover;
+}
+.app {
+  background: rgba(0, 0, 0, 0.746);
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  user-select: none;
+  line-height: 25px;
+}
+em {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
