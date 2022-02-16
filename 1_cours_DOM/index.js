@@ -85,3 +85,8 @@ form.addEventListener("submit", (e) => {
     alert("Veuillez remplir correctement !");
   }
 });
+
+//--------------------------------------------------
+// LOAD
+// Lancer une fonction au chargement de la page
+window.addEventListener("load", maFonction);

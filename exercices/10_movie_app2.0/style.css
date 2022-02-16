@@ -1,0 +1,170 @@
+* {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background: #212040;
+  color: white;
+}
+h1 {
+  font-size: 2.8rem;
+  text-shadow: 2px 3px 0px #546fe4;
+  text-align: center;
+}
+.form-container {
+  text-align: center;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  border: none;
+  font-size: 1.2rem;
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  outline: none;
+  text-align: center;
+}
+input[type="submit"] {
+  padding: 10px;
+  width: 240px;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  background: rgb(100, 100, 100);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+button {
+  padding: 10px;
+  font-size: 1.05rem;
+  background: #546fe4;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transform: translateY(-30px);
+  transition: 0.25s ease-out;
+}
+button:hover,
+input[type="submit"]:hover + button {
+  transform: translateY(-6px);
+  background: white;
+  color: #060d2c;
+}
+.btn-sort-container {
+  margin: 8px auto;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#goodToBad {
+  border-radius: 10px 0 0 10px;
+}
+#badToGood {
+  border-radius: 0 10px 10px 0;
+}
+#goodToBad,
+#badToGood {
+  background: #546fe4;
+  width: 100px;
+  transition: 0.3s;
+  position: relative;
+}
+#goodToBad span {
+  transform: translateY(-50%) rotate(-90deg);
+  right: 18px;
+}
+#badToGood span {
+  transform: translateY(-50%) rotate(90deg);
+  left: 16px;
+}
+#goodToBad span,
+#badToGood span {
+  position: absolute;
+  top: 50%;
+}
+#goodToBad:hover,
+#badToGood:hover {
+  background: #060d2c;
+}
+#result {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  flex: 1 0 25%;
+  min-width: 240px;
+  max-width: 300px;
+  background: #060d2c;
+  border-radius: 35px;
+  margin: 5px;
+  padding: 32px 15px 70px;
+  position: relative;
+}
+.movie-card img {
+  width: 80%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 0 8px 1px rgba(255, 255, 255, 0.1),
+    0 16px 1px rgba(255, 255, 255, 0.05);
+}
+.movie-card h2 {
+  margin: 34px 0 5px;
+}
+.movie-card h4 {
+  margin-top: 0;
+}
+.movie-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* set here max line number you need */
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  color: rgb(167, 166, 166);
+  margin: 8px 0 8px;
+}
+.movie-card ul {
+  margin: 26px 0;
+  display: flex;
+  padding: 0;
+}
+.movie-card li {
+  background: #212040;
+  border-radius: 18px;
+  padding: 5px 10px;
+  margin-right: 4px;
+  font-size: 0.8rem;
+}
+.movie-card h3 {
+  margin-bottom: 4px;
+}
+.movie-card .btn {
+  background: #546fe4;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  width: 150px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.movie-card .btn:hover {
+  background: #212040;
+  box-shadow: 0 0 10px #546ee4d2;
+  font-size: 1.025rem;
+}

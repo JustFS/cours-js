@@ -56,3 +56,7 @@ if (maVariable > 200) {
 } else {
   // Valeur si faux
 }
+
+for (let i = 0; i < tableau.length; i++) {
+  // Algo des choses à effectuer à chaque tour de boucle
+}
